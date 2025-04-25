@@ -110,11 +110,11 @@ const problems = [
         return "I am a circle"
       }
     }
-    const circle = new Circle
-    const square = new Square 
-    const shape = new Shape
+    const circle = new Circle() 
+    const square = new Square()
+    const shape = new Shape()
 
-    text = [circle, square, shape]
+    text = [circle.constructor(), square.constructor(), shape.constructor()]
     output.textContent = text 
 }
   , function problem5() {
